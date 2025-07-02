@@ -27,7 +27,7 @@ const Todo = ({ data, onToggle, onDelete }) => {
         )}
       </div>
 
-      <h4 style="word-break: break-word; overflow-wrap: break-word;" className="w-full capitalize break-words break-all whitespace-normal">{data.text}</h4>
+      <h4 className="w-full capitalize break-words break-all whitespace-normal hyphens-manual">{data.text}</h4>
       <button
         onClick={() =>onDelete(data.id)}
         className="w-fit px-3 bg-red-600 text-base py-2 rounded-md"
